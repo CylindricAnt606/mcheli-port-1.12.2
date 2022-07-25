@@ -14,7 +14,8 @@
 /*      */ import mcheli.aircraft.MCH_EntitySeat;
 /*      */ import mcheli.aircraft.MCH_PacketStatusRequest;
 /*      */ import mcheli.aircraft.MCH_Parts;
-/*      */ import mcheli.particles.MCH_ParticleParam;
+/*      */ import mcheli.mcheli.aircraft.MCH_BoundingBox;
+import mcheli.particles.MCH_ParticleParam;
 /*      */ import mcheli.particles.MCH_ParticlesUtil;
 /*      */ import mcheli.tank.MCH_TankInfo;
 /*      */ import mcheli.tank.MCH_TankInfoManager;
@@ -40,7 +41,8 @@
 /*      */ import net.minecraft.util.DamageSource;
 /*      */ import net.minecraft.util.MathHelper;
 /*      */ import net.minecraft.util.Vec3;
-/*      */ import net.minecraft.world.World;
+/*      */ import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.world.World;
 /*      */ 
 /*      */ 
 /*      */ 
