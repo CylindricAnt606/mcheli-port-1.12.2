@@ -51,7 +51,6 @@ public class MCH_AircraftBoundingBox extends AxisAlignedBB {
         return ret;
     }
 
-
     public AxisAlignedBB func_72314_b(double p_72314_1_, double p_72314_3_, double p_72314_5_) {
         double d3 = this.field_72340_a - p_72314_1_;
         double d4 = this.field_72338_b - p_72314_3_;
@@ -61,7 +60,6 @@ public class MCH_AircraftBoundingBox extends AxisAlignedBB {
         double d8 = this.field_72334_f + p_72314_5_;
         return NewAABB(d3, d4, d5, d6, d7, d8);
     }
-
 
     public AxisAlignedBB func_111270_a(AxisAlignedBB p_111270_1_) {
         double d0 = Math.min(this.field_72340_a, p_111270_1_.field_72340_a);
@@ -120,16 +118,13 @@ public class MCH_AircraftBoundingBox extends AxisAlignedBB {
         return NewAABB(d3, d4, d5, d6, d7, d8);
     }
 
-
     public AxisAlignedBB func_72329_c() {
         return NewAABB(this.field_72340_a, this.field_72338_b, this.field_72339_c, this.field_72336_d, this.field_72337_e, this.field_72334_f);
     }
 
-
     public AxisAlignedBB func_72325_c(double x, double y, double z) {
         return NewAABB(this.field_72340_a + x, this.field_72338_b + y, this.field_72339_c + z, this.field_72336_d + x, this.field_72337_e + y, this.field_72334_f + z);
     }
-
 
     public MovingObjectPosition func_72327_a(Vec3 v1, Vec3 v2) {
         this.ac.lastBBDamageFactor = 1.0F;
