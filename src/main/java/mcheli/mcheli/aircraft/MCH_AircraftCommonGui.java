@@ -2,20 +2,17 @@
 /*     */ 
 /*     */ import cpw.mods.fml.relauncher.Side;
 /*     */ import cpw.mods.fml.relauncher.SideOnly;
-/*     */ import mcheli.MCH_Config;
-/*     */ import mcheli.aircraft.MCH_AircraftInfo;
-/*     */ import mcheli.aircraft.MCH_EntityAircraft;
-/*     */ import mcheli.gui.MCH_Gui;
-/*     */ import mcheli.hud.MCH_Hud;
-/*     */ import mcheli.weapon.MCH_EntityTvMissile;
-/*     */ import mcheli.wrapper.W_McClient;
+/*     */ import mcheli.mcheli.MCH_Config;
+/*     */ import mcheli.mcheli.aircraft.MCH_AircraftInfo;
+/*     */ import mcheli.mcheli.aircraft.MCH_EntityAircraft;
+/*     */ import mcheli.mcheli.gui.MCH_Gui;
+/*     */ import mcheli.mcheli.hud.MCH_Hud;
+/*     */ import mcheli.mcheli.weapon.MCH_EntityTvMissile;
+/*     */ import mcheli.mcheli.wrapper.W_McClient;
 /*     */ import net.minecraft.client.Minecraft;
 /*     */ import net.minecraft.entity.Entity;
 /*     */ import net.minecraft.entity.player.EntityPlayer;
 /*     */ import org.lwjgl.opengl.GL11;
-/*     */ 
-/*     */ 
-/*     */ 
 /*     */ 
 /*     */ @SideOnly(Side.CLIENT)
 /*     */ public abstract class MCH_AircraftCommonGui
@@ -25,7 +22,6 @@
 /*  25 */     super(minecraft);
 /*     */   }
 /*     */ 
-/*     */   
 /*     */   public void drawHud(MCH_EntityAircraft ac, EntityPlayer player, int seatId) {
 /*  30 */     MCH_AircraftInfo info = ac.getAcInfo();
 /*  31 */     if (info == null)
