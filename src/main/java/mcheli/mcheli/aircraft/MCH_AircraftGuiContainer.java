@@ -1,9 +1,9 @@
 /*     */ package mcheli.mcheli.aircraft;
 /*     */ 
-/*     */ import mcheli.MCH_Lib;
-/*     */ import mcheli.aircraft.MCH_AircraftInventory;
-/*     */ import mcheli.aircraft.MCH_EntityAircraft;
-/*     */ import mcheli.uav.MCH_EntityUavStation;
+/*     */ import mcheli.mcheli.MCH_Lib;
+/*     */ import mcheli.mcheli.aircraft.MCH_AircraftInventory;
+/*     */ import mcheli.mcheli.aircraft.MCH_EntityAircraft;
+/*     */ import mcheli.mcheli.uav.MCH_EntityUavStation;
 /*     */ import net.minecraft.entity.player.EntityPlayer;
 /*     */ import net.minecraft.inventory.Container;
 /*     */ import net.minecraft.inventory.IInventory;
@@ -37,15 +37,13 @@
 /*  37 */         func_75146_a(new Slot((IInventory)player.field_71071_by, 9 + j + y * 9, 25 + j * 18, 135 + y * 18));
 /*     */       }
 /*     */     } 
-/*     */ 
 /*     */     
 /*  42 */     for (int x = 0; x < 9; x++)
 /*     */     {
 /*  44 */       func_75146_a(new Slot((IInventory)player.field_71071_by, x, 25 + x * 18, 195));
 /*     */     }
 /*     */   }
-/*     */ 
-/*     */   
+/*     */  
 /*     */   public int getInventoryStartIndex() {
 /*  50 */     if (this.aircraft == null) return 3; 
 /*  51 */     return 3 + this.aircraft.getNumEjectionSeat();
@@ -57,8 +55,7 @@
 /*  57 */     super.func_75142_b();
 /*     */   }
 /*     */ 
-/*     */ 
-/*     */   
+/*     */  
 /*     */   public boolean func_75145_c(EntityPlayer player) {
 /*  63 */     if (this.aircraft.getGuiInventory().func_70300_a(player))
 /*     */     {
@@ -85,8 +82,7 @@
 /*  85 */     return false;
 /*     */   }
 /*     */ 
-/*     */ 
-/*     */   
+/*     */  
 /*     */   public ItemStack func_82846_b(EntityPlayer player, int slotIndex) {
 /*  91 */     MCH_AircraftInventory iv = this.aircraft.getGuiInventory();
 /*  92 */     Slot slot = this.field_75151_b.get(slotIndex);
@@ -107,7 +103,6 @@
 /* 107 */           playerSlot.func_75215_d(itemStack);
 /* 108 */           slot.func_75215_d(null);
 /* 109 */           return itemStack;
-/*     */         
 /*     */         }
 /*     */       
 /*     */       }
@@ -182,9 +177,3 @@
 /*     */     } 
 /*     */   }
 /*     */ }
-
-
-/* Location:              C:\Users\danie\Desktop\Mod Porting Tools\MC1.7.10_mcheli_1.0.3.jar!\mcheli\mcheli\aircraft\MCH_AircraftGuiContainer.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       1.1.3
- */
