@@ -1,27 +1,21 @@
 /*     */ package mcheli.mcheli.aircraft;
 /*     */ 
-/*     */ import mcheli.MCH_PacketIndOpenScreen;
-/*     */ import mcheli.aircraft.MCH_AircraftGuiContainer;
-/*     */ import mcheli.aircraft.MCH_EntityAircraft;
-/*     */ import mcheli.aircraft.MCH_PacketIndReload;
-/*     */ import mcheli.command.MCH_PacketCommandSave;
-/*     */ import mcheli.multiplay.MCH_PacketIndMultiplayCommand;
-/*     */ import mcheli.weapon.MCH_WeaponInfo;
-/*     */ import mcheli.weapon.MCH_WeaponSet;
-/*     */ import mcheli.wrapper.W_GuiContainer;
-/*     */ import mcheli.wrapper.W_McClient;
-/*     */ import mcheli.wrapper.W_ScaledResolution;
+/*     */ import mcheli.mcheli.MCH_PacketIndOpenScreen;
+/*     */ import mcheli.mcheli.aircraft.MCH_AircraftGuiContainer;
+/*     */ import mcheli.mcheli.aircraft.MCH_EntityAircraft;
+/*     */ import mcheli.mcheli.aircraft.MCH_PacketIndReload;
+/*     */ import mcheli.mcheli.command.MCH_PacketCommandSave;
+/*     */ import mcheli.mcheli.multiplay.MCH_PacketIndMultiplayCommand;
+/*     */ import mcheli.mcheli.weapon.MCH_WeaponInfo;
+/*     */ import mcheli.mcheli.weapon.MCH_WeaponSet;
+/*     */ import mcheli.mcheli.wrapper.W_GuiContainer;
+/*     */ import mcheli.mcheli.wrapper.W_McClient;
+/*     */ import mcheli.mcheli.wrapper.W_ScaledResolution;
 /*     */ import net.minecraft.client.gui.GuiButton;
 /*     */ import net.minecraft.client.gui.GuiTextField;
 /*     */ import net.minecraft.entity.player.EntityPlayer;
 /*     */ import net.minecraft.inventory.Container;
 /*     */ import org.lwjgl.opengl.GL11;
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
 /*     */ 
 /*     */ public class MCH_AircraftGui
 /*     */   extends W_GuiContainer
